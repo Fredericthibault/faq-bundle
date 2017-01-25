@@ -1,0 +1,11 @@
+sylius_resource:
+    resources:
+        viweb.faq:
+            classes:
+                model: Viweb\FaqBundle\Entity\Faq
+                repository: Viweb\FaqBundle\Repository\FaqRepository
+                form: Viweb\FaqBundle\Form\Type\FaqType
+            translation:
+                classes:
+                    model: Viweb\FaqBundle\Entity\FaqTranslation
+                    form: Viweb\FaqBundle\Form\Type\FaqTranslationType

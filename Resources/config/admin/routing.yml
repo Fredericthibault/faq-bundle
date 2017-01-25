@@ -1,0 +1,14 @@
+viweb_faq:
+    resource: |
+        alias: viweb.faq
+        redirect: update
+        except: ['show']
+        section: admin
+        templates: ViwebSystemBundle:Crud
+        grid: viweb_faq
+        vars:
+            all:
+                subheader: app.ui.supplier
+            index:
+                icon: 'outline'
+    type: sylius.resource

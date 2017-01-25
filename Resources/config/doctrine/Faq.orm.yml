@@ -1,0 +1,15 @@
+Viweb\FaqBundle\Entity\Faq:
+    type: entity
+    table: null
+    repositoryClass: Viweb\FaqBundle\Repository\FaqRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        ordering:
+            type: integer
+            nullable: true
+    lifecycleCallbacks: {  }

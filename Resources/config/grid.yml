@@ -1,0 +1,28 @@
+sylius_grid:
+    grids:
+        viweb_faq:
+            driver:
+                name: doctrine/orm
+                options:
+                    class: Viweb\FaqBundle\Entity\Faq
+            fields:
+                title:
+                    type: string
+                    label: sylius.ui.name
+                    sortable: ~
+            actions:
+                main:
+                    create:
+                        type: create
+                        label: sylius.ui.create
+                        icon: 'icon-external-link'
+                        options: { }
+                item:
+                    update:
+                        type: update
+                        label: sylius.ui.edit
+                        options: { }
+                    delete:
+                        type: delete
+                        label: sylius.ui.delete
+                        options: { }

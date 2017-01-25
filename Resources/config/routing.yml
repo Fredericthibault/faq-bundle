@@ -1,0 +1,3 @@
+viweb_faq_homepage:
+    path:     /
+    defaults: { _controller: ViwebFaqBundle:Default:index }
