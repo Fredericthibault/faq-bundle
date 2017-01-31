@@ -1,8 +1,8 @@
-viweb_faq:
+viweb_admin_faq:
     resource: |
         alias: viweb.faq
         redirect: update
-        except: ['show']
+        except: ['show', 'update']
         section: admin
         templates: ViwebSystemBundle:Crud
         grid: viweb_faq
@@ -12,3 +12,12 @@ viweb_faq:
             index:
                 icon: 'outline'
     type: sylius.resource
+
+viweb_admin_faq_update:
+    path: /faqs/{id}/edit
+    methods: [GET, POST]
+    defaults:
+        _controller: viweb.controller.faq:updateAction
+        _sylius:
+            section: admin
+            template: ViwebSystemBundle:Crud:update.html.twig
