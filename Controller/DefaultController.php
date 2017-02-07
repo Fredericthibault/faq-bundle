@@ -8,6 +8,10 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('ViwebFaqBundle:Default:index.html.twig');
+        $faqs = $this->get('viweb.repository.faq')->findAll();
+        return $this->render('ViwebFaqBundle:Default:index.html.twig',
+            [
+                'faqs' => $faqs
+            ]);
     }
 }
